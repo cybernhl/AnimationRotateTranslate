@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/ll_ndj"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:background="@drawable/bg1"
+        android:layout_centerHorizontal="true"
+        >
+
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@android:color/transparent"
+            android:layout_centerHorizontal="true"
+            >
+            <ImageView
+	            android:id="@+id/imgView_1"
+	            android:layout_marginLeft="80dp"
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+	            android:layout_gravity="center|center_horizontal"
+	            android:src="@drawable/nd_1" />
+
+	        <ImageView
+	            android:id="@+id/imgView_2"
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+	            android:layout_gravity="center|center_horizontal"
+	            android:src="@drawable/nd_2" />
+	        <ImageView
+	            android:id="@+id/imgView_3"
+	            style="@style/niudanStyle"
+	            android:src="@drawable/nd_3" />
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:layout_centerHorizontal="true"
+            >
+	        <ImageView
+	            android:id="@+id/imgView_4"
+	             android:layout_marginLeft="60dp"
+	             android:layout_marginTop="50dp"
+	             android:layout_marginBottom="20dp"
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+	            android:layout_gravity="center|center_horizontal"
+	            android:src="@drawable/nd_4" />
+	        <ImageView
+	            android:id="@+id/imgView_5"
+	            style="@style/niudanStyle2"
+	            android:src="@drawable/nd_5" />
+	        <ImageView
+	            android:id="@+id/imgView_6"
+	            style="@style/niudanStyle2"
+	            android:src="@drawable/nd_6" />
+	        <ImageView
+	            android:id="@+id/imgView_7"
+	            style="@style/niudanStyle2"
+	            android:src="@drawable/nd_7" />
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+    <Button 
+        android:id="@+id/btn_start"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="开始"
+        android:layout_below="@id/ll_ndj"
+        android:layout_margin="10dp"
+        />
+
+</RelativeLayout>
